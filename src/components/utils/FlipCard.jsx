@@ -1,8 +1,20 @@
+import React, { useState, useEffect } from "react";
+
 function FlipCard(props) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const cardStyle = {
     backgroundColor: "transparent",
-    width: "280px",
-    height: "320px",
+    width: "100%",
+    maxWidth: "280px",
+    height: isMobile ? "240px" : "320px",
     perspective: "1000px",
     margin: "0 auto",
     cursor: "pointer",

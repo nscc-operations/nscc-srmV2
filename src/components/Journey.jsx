@@ -2,7 +2,7 @@ import React from "react";
 import FlipCard from "./utils/FlipCard";
 
 export default function Journey() {
-    const sponsorsData = [
+  const sponsorsData = [
     {
       name: "Razorpay",
       bgColor: "linear-gradient(135deg, #134e4a 0%, #0f766e 50%, #14b8a6 100%)",
@@ -60,7 +60,7 @@ export default function Journey() {
 
   return (
     <div id="sponsors">
-      <div className="bg-gradient-to-b from-[#061529] via-[#112240] to-[#0a192f] min-h-screen relative">
+      <div className="bg-gradient-to-b from-[#061529] via-[#112240] to-[#0a192f] min-h-[80vh] lg:min-h-screen relative">
         {/* Unified background overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/5 via-purple-500/5 to-blue-500/5" />
 
@@ -80,19 +80,19 @@ export default function Journey() {
           </div>
         ))}
 
-        <div className="relative z-10 font-helvetica-neue px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+        <div className="relative z-10 font-helvetica-neue px-4 sm:px-6 lg:px-8 py-6 lg:py-12">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 lg:gap-12">
+            <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-4 lg:gap-12">
               <div className="flex-1">
-                <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white text-center lg:text-left leading-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-7xl font-bold text-white text-center lg:text-left leading-tight">
                   Journeys Beyond
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#31C4BF] to-[#3b82f6] mt-2">
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#31C4BF] to-[#3b82f6] mt-1">
                     NSCC SRM
                   </span>
                 </h1>
               </div>
               <div className="lg:w-1/3 lg:max-w-md">
-                <p className="text-base sm:text-lg text-gray-300 text-center lg:text-left leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-300 text-center lg:text-left leading-relaxed">
                   We're proud to be supported by organizations that empower
                   <span className="text-[#31C4BF] font-medium">
                     {" "}
@@ -112,7 +112,7 @@ export default function Journey() {
         </div>
 
         {/* Modern responsive layout */}
-        <div className="relative z-10 px-4 sm:px-6 lg:px-8 pb-12">
+        <div className="relative z-10 px-4 sm:px-6 lg:px-8 pb-6 lg:pb-12">
           <div className="max-w-7xl mx-auto">
             {/* Desktop View */}
             <div className="hidden lg:flex justify-center items-center gap-8 flex-wrap">
@@ -131,7 +131,7 @@ export default function Journey() {
 
             {/* Tablet & Mobile View */}
             <div className="lg:hidden">
-              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
                 {sponsorsData.map((sponsor, index) => (
                   <FlipCard
                     key={index}
@@ -149,5 +149,5 @@ export default function Journey() {
         </div>
       </div>
     </div>
-  )
+  );
 }
