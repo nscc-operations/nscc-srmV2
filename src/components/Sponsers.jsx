@@ -6,7 +6,8 @@ export default function Sponsors() {
     {
       name: "AOPS",
       image: "/sponser/aops.png",
-      website: "https://artofproblemsolving.com/?srsltid=AfmBOoqSyVK8RTyJuHAFHwdE1etOTW5JthcX1yLmXjmlXhukTuO_XibE",
+      website:
+        "https://artofproblemsolving.com/?srsltid=AfmBOoqSyVK8RTyJuHAFHwdE1etOTW5JthcX1yLmXjmlXhukTuO_XibE",
     },
     {
       name: "Belgian Waffles",
@@ -31,17 +32,20 @@ export default function Sponsors() {
     {
       name: "ETH",
       image: "/sponser/ETHIndia.png",
-      website: "https://www.linkedin.com/company/ethindia/?originalSubdomain=in",
+      website:
+        "https://www.linkedin.com/company/ethindia/?originalSubdomain=in",
     },
     {
       name: "Gyandhan",
       image: "/sponser/gyandhan.png",
-      website: "https://www.gyandhan.com/?srsltid=AfmBOorycnnUF2-Iq45dF1QGfq-VDIR6L0kSpQ7KNIIPnMPhHpdROwJQ",
+      website:
+        "https://www.gyandhan.com/?srsltid=AfmBOorycnnUF2-Iq45dF1QGfq-VDIR6L0kSpQ7KNIIPnMPhHpdROwJQ",
     },
     {
       name: "InterviewBuddy",
       image: "/sponser/interview.png",
-      website: "https://interviewbuddy.net/?srsltid=AfmBOorA2xLpFhWahKPaXKYGpfUPLCggh1z_Zy8oeq9nr_A0ow80n9hn",
+      website:
+        "https://interviewbuddy.net/?srsltid=AfmBOorA2xLpFhWahKPaXKYGpfUPLCggh1z_Zy8oeq9nr_A0ow80n9hn",
     },
     {
       name: "LeapBeeGee",
@@ -51,7 +55,8 @@ export default function Sponsors() {
     {
       name: "OFFO",
       image: "/sponser/offo.png",
-      website: "https://offostore.com/?fbclid=PAZXh0bgNhZW0CMTEAAafml2CV1ih1Hd-ubPjIYcv8095wa1YpR-tstPGTqB1NtnDHVJvlox92yin1Og_aem_fPaKk1Ad7d2c8zIb_-6zww",
+      website:
+        "https://offostore.com/?fbclid=PAZXh0bgNhZW0CMTEAAafml2CV1ih1Hd-ubPjIYcv8095wa1YpR-tstPGTqB1NtnDHVJvlox92yin1Og_aem_fPaKk1Ad7d2c8zIb_-6zww",
     },
     {
       name: "Polygon",
@@ -97,38 +102,37 @@ export default function Sponsors() {
     >
       {/* Section Title */}
       <div className="text-center mb-10">
-         <h1 className="text-4xl sm:text-6xl lg:text-[120px] font-normal text-white font-helvetica">
-            Our{" "}
+        <h1 className="text-4xl sm:text-6xl lg:text-[120px] font-normal text-white font-helvetica">
+          Our{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#31C4BF] to-[#3b82f6]">
             Sponsors
-         </span>
+          </span>
         </h1>
       </div>
 
       {/* White marquee strip */}
       <div className="bg-white py-6">
         <Marquee speed={60} gradient={false}>
-  <div className="flex items-center gap-10 px-4">
-    {sponsorsData.map((sponsor, index) => (
-      <a
-        key={index}
-        href={sponsor.website}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center"
-      >
-        <div className="w-40 h-24 flex items-center justify-center">
-          <img
-            src={sponsor.image}
-            alt={sponsor.name}
-            className="max-h-full max-w-full object-contain"
-          />
-        </div>
-      </a>
-    ))}
-  </div>
-</Marquee>
-
+          <div className="flex items-center gap-10 px-4">
+            {sponsorsData.map((sponsor, index) => (
+              <a
+                key={index}
+                href={sponsor.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center"
+              >
+                <div className="w-40 h-24 flex items-center justify-center">
+                  <img
+                    src={sponsor.image}
+                    alt={sponsor.name}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              </a>
+            ))}
+          </div>
+        </Marquee>
       </div>
     </div>
   );
