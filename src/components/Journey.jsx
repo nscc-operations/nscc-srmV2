@@ -92,19 +92,20 @@ export default function Journey() {
                 </h1>
               </div>
               <div className="lg:w-1/3 lg:max-w-md">
-                <p className="text-sm sm:text-base text-gray-300 text-center lg:text-left leading-relaxed">
-                  We're proud to be supported by organizations that empower
+                <p className="text-base sm:text-lg lg:text-xl text-gray-300 text-center lg:text-left leading-relaxed">
+                  From our community to global leaders - witness the
+                  extraordinary destinations where NSCC SRM
                   <span className="text-[#31C4BF] font-medium">
                     {" "}
-                    innovation
-                  </span>
-                  ,
+                    dreamers
+                  </span>{" "}
+                  have launched their
                   <span className="text-[#3b82f6] font-medium">
                     {" "}
-                    technology
-                  </span>
-                  , and
-                  <span className="text-[#22d3ee] font-medium"> growth</span>.
+                    careers
+                  </span>{" "}
+                  and are shaping the
+                  <span className="text-[#22d3ee] font-medium"> future</span>.
                 </p>
               </div>
             </div>
