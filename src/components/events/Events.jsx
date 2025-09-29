@@ -144,10 +144,11 @@ const MobileCarousel = () => {
       <div className="live-events-header-mobile relative z-10">
         <h1 className="live-events-title-mobile">Live Events</h1>
         <p className="live-events-description-mobile">
-          Our events are all about energy, innovation, and community.
-          From coding marathons to idea showcases, we create platforms where students challenge themselves,
-          collaborate with peers, and celebrate technology. Each event is designed to spark creativity,
-          build skills, and inspire the next generation of tech leaders.
+          Our events are all about energy, innovation, and community. From
+          coding marathons to idea showcases, we create platforms where students
+          challenge themselves, collaborate with peers, and celebrate
+          technology. Each event is designed to spark creativity, build skills,
+          and inspire the next generation of tech leaders.
         </p>
       </div>
 
