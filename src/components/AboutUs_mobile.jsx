@@ -65,8 +65,8 @@ export default function AboutUs() {
                     beyond the campus. Our digital presence is strong, with
                     5.5K+ Instagram followers and 1K+ on LinkedIn. With 10+
                     successful events conducted, we've created meaningful
-                    learning and networking opportunities. NSCC SRM stands out as a
-                    space where students collaborate, build, and innovate
+                    learning and networking opportunities. NSCC SRM stands out
+                    as a space where students collaborate, build, and innovate
                     together.
                   </p>
 
@@ -113,8 +113,8 @@ export default function AboutUs() {
               <div className="text-center">
                 <CountUp
                   start={0}
-                  end={68}
-                  duration={2}
+                  end={70}
+                  duration={4}
                   className="text-4xl sm:text-6xl lg:text-9xl font-bold"
                 />
                 <span
@@ -137,7 +137,7 @@ export default function AboutUs() {
                 <CountUp
                   start={0}
                   end={11}
-                  duration={2}
+                  duration={4}
                   className="text-4xl sm:text-6xl lg:text-9xl font-bold"
                 />
                 <span
@@ -160,7 +160,7 @@ export default function AboutUs() {
                 <CountUp
                   start={0}
                   end={21}
-                  duration={2}
+                  duration={4}
                   className="text-4xl sm:text-6xl lg:text-9xl font-bold"
                 />
                 <span
