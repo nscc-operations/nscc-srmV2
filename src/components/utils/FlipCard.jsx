@@ -165,17 +165,7 @@ function FlipCard(props) {
       <div className="flip-inner" style={innerStyle}>
         <div style={frontStyle}>
           <div style={logoContainerStyle}>
-            <img
-              src={props.image}
-              alt={props.name}
-              style={logoStyle}
-              onError={(e) => {
-                console.log(`❌ Failed to load image: ${props.image}`);
-              }}
-              onLoad={() =>
-                console.log(`✅ Successfully loaded: ${props.image}`)
-              }
-            />
+            <img src={props.image} alt={props.name} style={logoStyle} />
           </div>
         </div>
         <div style={backStyle}>

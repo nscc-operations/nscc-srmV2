@@ -57,7 +57,7 @@ export default function Gallery() {
       const paddingRight = parseFloat(computedStyle.paddingRight);
 
       // Calculate the actual width needed to show all images
-      const images = carouselElement.querySelectorAll('.gallery-image-wrapper');
+      const images = carouselElement.querySelectorAll(".gallery-image-wrapper");
       let totalImageWidth = 0;
 
       images.forEach((img) => {
@@ -65,7 +65,7 @@ export default function Gallery() {
       });
 
       // Add gaps between images (6vw each, converted to pixels)
-      const gapWidth = (window.innerWidth * 0.06) * (images.length - 1);
+      const gapWidth = window.innerWidth * 0.06 * (images.length - 1);
 
       // Add padding (15vw on each side)
       const totalPadding = window.innerWidth * 0.3; // 15vw * 2
@@ -76,13 +76,6 @@ export default function Gallery() {
         totalContentWidth - window.innerWidth,
         totalImageWidth * 0.8 // Fallback minimum
       );
-
-      // Debug logging to check carousel dimensions
-      console.log("Total content width:", totalContentWidth);
-      console.log("Window width:", window.innerWidth);
-      console.log("Min scroll distance:", minScrollDistance);
-      console.log("Total image width:", totalImageWidth);
-      console.log("Number of images:", galleryImages.length);
 
       let tl = gsap.timeline({
         scrollTrigger: {
